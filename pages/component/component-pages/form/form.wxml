@@ -1,0 +1,55 @@
+<!--pages/component/component-pages/form/form.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">form</view>
+  </view>
+  <view class="page__bd">
+    <form report-submit bindsubmit="submitHandle" bindreset="resetHandle">
+      <view class="section">
+        <view class="section__title">switch</view>
+        <view class="section__bd section__bd-2">
+          <switch name="switch"></switch>
+        </view>
+      </view>
+
+      <view class="section">
+        <view class="section__title">radio</view>
+        <view class="section__bd section__bd-2">
+          <radio-group name="radio">
+            <label><radio value="radio1"></radio>选项一</label>
+            <label><radio value="radio2"></radio>选项二</label>
+          </radio-group>
+        </view>
+      </view>
+
+      <view class="section">
+        <view class="section__title">checkbox</view>
+        <view class="section__bd section__bd-2">
+          <checkbox-group name="checkbox">
+            <label><checkbox value="checkbox1"></checkbox>选项一</label>
+            <label><checkbox value="checkbox2"></checkbox>选项二</label>
+          </checkbox-group>
+        </view>
+      </view>
+
+      <view class="section">
+        <view class="section__title">slider</view>
+        <view class="section__bd section__bd-2">
+          <slider min="0" max="100" value="50" show-value name="slider"></slider>
+        </view>
+      </view>
+
+      <view class="section">
+        <view class="section__title">input</view>
+        <view class="section__bd">
+          <input name="input" placeholder="这是一个输入框"></input>
+        </view>
+      </view>
+
+      <view class="btn-area">
+        <button form-type="submit" type="primary" loading="{{loading}}" disabled="{{disabled}}">Submit</button>
+        <button form-type="reset">Reset</button>
+      </view>
+    </form>
+  </view>
+</view>

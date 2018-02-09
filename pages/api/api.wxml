@@ -1,0 +1,5 @@
+<view class="container api-list">
+  <block wx:for="{{apilist}}" wx:key="{{item.name}}">
+    <text>{{item.name}}</text>
+  </block>
+</view>

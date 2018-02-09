@@ -1,0 +1,13 @@
+/* pages/component/component-pages/switch/switch.wxss */
+.section__bd_1 {
+  justify-content: flex-start;
+  padding: 30rpx 30rpx 0;
+}
+.section__bd_2 {
+  display: block;
+}
+.section__bd_2 .cell__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,41 @@
+<!--pages/component/component-pages/video/video.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">video</view>
+  </view>
+  <view class="page__bd">
+
+    <view class="section">
+      <view class="section__title"></view>
+      <view class="section__bd">
+        <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+          danmu-list="{{danmuList}}" enable-danmu danmu-btn controls autoplay="{{autoplay}}" loop="{{loop}}" muted="{{muted}}" loop="{{loop}}" page-gesture="{{pageGesture}}" show-progress="{{showProgress}}" show-fullscreen-btn="{{showFullscreenBtn}}" show-play-btn="{{showPlayBtn}}"
+          show-center-play-btn="{{showCenterPlayBtn}}" enable-progress-gesture="{{enableProgressGesture}}" bindplay="bindplay" bindpause="bindpause" bindended="bindended" bindtimeupdate="bindtimeupdate" bindfullscreenchange="bindfullscreenchange"></video>
+      </view>
+    </view>
+
+    <input placeholder="请输入弹幕内容" value="{{danmu}}" bindblur="inputBlur"></input>
+    <view class="btn-area">
+      <button type="primary" bindtap="sendDanmu">发送弹幕</button>
+    </view>
+
+    <view class="cell">
+      <view class="cell__item">
+        <text>静音播放</text>
+        <switch checked="{{muted}}" bindchange="mutedHandle"></switch>
+      </view>
+      <view class="cell__item">
+        <text>在非全屏模式下，是否开启亮度与音量调节手势</text>
+        <switch checked="{{pageGesture}}" bindchange="pageGestureHandle"></switch>
+      </view>
+      <view class="cell__item">
+        <text>是否显示全屏按钮</text>
+        <switch checked="{{showFullscreenBtn}}" bindchange="showFullscreenBtnHandle"></switch>
+      </view>
+      <view class="cell__item">
+        <text>是否开启控制进度的手势（全屏下）</text>
+        <switch checked="{{enableProgressGesture}}" bindchange="enableProgressGestureHandle"></switch>
+      </view>
+    </view>
+  </view>
+</view>

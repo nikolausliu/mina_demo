@@ -1,0 +1,12 @@
+/* pages/component/component-pages/video/video.wxss */
+
+input {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.cell__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

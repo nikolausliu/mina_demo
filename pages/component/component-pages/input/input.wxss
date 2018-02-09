@@ -1,0 +1,5 @@
+/* pages/component/component-pages/input/input.wxss */
+input {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}

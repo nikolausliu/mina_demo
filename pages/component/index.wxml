@@ -1,0 +1,25 @@
+<view class="index">
+  <view class="head">
+    <text class="desc">以下将展示小程序官方组件能力</text>
+  </view>
+  <view class="body">
+    <view class="widgets">
+      <block wx:for="{{list}}" wx:key="{{item.id}}">
+        <view class="widgets-item">
+          <view class="widgets-info {{item.open ? 'widgets-info-sel' : ''}}" bindtap="toggle" id="{{item.id}}">
+            <text class="widget-info-name">{{item.name}}</text>
+          </view>
+          <view class="widgets-list {{item.open ? 'widgets-list-show' : ''}}">
+            <block wx:for="{{item.pages}}" wx:for-item="page" wx:for-index="idx" wx:key="{{page}}">
+              <navigator url="component-pages/{{page}}/{{page}}" class='widget'>
+                <text class="widget-list-name">{{page}}</text>
+                <image class="widget-arrow" src="/images/arrowright.png" mode="aspectFill"></image>
+                <view class="widget-line {{idx === 0 ? 'widget-line-first' : ''}}"></view>
+              </navigator>
+            </block>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

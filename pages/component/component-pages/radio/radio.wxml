@@ -1,0 +1,43 @@
+<!--pages/component/component-pages/radio/radio.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">radio</view>
+  </view>
+  <view class="page__bd">
+
+    <view class="section">
+      <view class="section__title">默认样式</view>
+      <view class="section__bd section__bd_1">
+        <radio-group>
+          <label>
+            <radio checked color="red"></radio>选中
+          </label>
+          <label>
+            <radio></radio>未选中
+          </label>
+        </radio-group>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section__title">推荐样式</view>
+      <view class="section__bd section__bd_2">
+        <radio-group bindchange="changeHandle">
+          <view class="cell">
+            <block wx:for="{{items}}" wx:key="{{item.name}}">
+              <view class="cell__item">
+                <label>
+                  <radio value="{{item.name}}" checked="{{item.checked}}"></radio>{{item.value}}
+                </label>
+              </view>
+            </block>
+            <view class="cell__item">
+              change事件发生时，显示选中的值：{{checkedValue}}
+            </view>
+          </view>
+        </radio-group>
+      </view>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,45 @@
+<!--pages/component/component-pages/image/image.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">image</view>
+  </view>
+  <view class="page__bd">
+
+    <block wx:for="{{array}}" wx:key="{{item.text}}">
+      <view class="section">
+        <view class="section__title">{{item.text}}</view>
+        <view class="section__bd section__bd-2">
+          <image src="./1.jpg" mode="{{item.mode}}"></image>
+        </view>
+      </view>
+    </block>
+
+    <view class="section">
+      <view class="section__title">单张图片错误处理</view>
+      <view class="section__bd section__bd-2">
+        <image src="{{errImg.src}}" binderror="errImgHandle" data-def-src="{{errImg.defSrc}}"></image>
+      </view>
+    </view>
+
+
+    <view class="section">
+      <view class="section__title">图片列表错误处理</view>
+      <block wx:for="{{errImgArr}}" wx:key="{{item.src}}">
+        <view class="section__bd section__bd-2">
+          <image src="{{item.src}}" binderror="errImgHandle2" data-def-src="{{item.defSrc}}" data-index="{{index}}"></image>
+        </view>
+      </block>
+    </view>
+
+    <view class="section">
+      <view class="section__title">图片列表错误处理封装进util.js</view>
+      <block wx:for="{{errImgArr2}}" wx:key="{{item.src}}">
+        <view class="section__bd section__bd-2">
+          <image src="{{item.src}}" binderror="errImgHandle3" bindload="loadHandle" data-index="{{index}}"></image>
+        </view>
+      </block>
+    </view>
+
+
+  </view>
+</view>

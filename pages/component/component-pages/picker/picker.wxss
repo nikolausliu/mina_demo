@@ -1,0 +1,14 @@
+/* pages/component/component-pages/picker/picker.wxss */
+.cell {
+  width: 100%;
+}
+
+.cell__item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+text {
+  margin-left: 30rpx;
+}

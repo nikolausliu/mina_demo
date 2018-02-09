@@ -1,0 +1,15 @@
+<!--pages/component/component-pages/text/text.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">text</view>
+  </view>
+  <view class="page__bd">
+    <view class="btn-area">
+      <view class="body-view">
+        <text>{{text}}</text>
+        <button bindtap="add" disabled="{{!canAdd}}">add line</button>
+        <button bindtap="remove" disabled="{{!canRemove}}">remove line</button>
+      </view>
+    </view>
+  </view>
+</view>

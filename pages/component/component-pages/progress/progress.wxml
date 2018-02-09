@@ -1,0 +1,35 @@
+<!--pages/component/component-pages/progress/progress.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">progress</view>
+  </view>
+  <view class="page__bd">
+    <view class="section">
+      <view class="section__title">显示进度信息</view>
+      <view class="section__bd">
+        <progress percent="20" show-info></progress>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section__title">两倍进度条宽度</view>
+      <view class="section__bd">
+        <progress percent="40" stroke-width="12"></progress>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section__title">换个颜色再来一次</view>
+      <view class="section__bd">
+        <progress percent="60" backgroundColor="#000" activeColor="orange"></progress>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section__title">动起来</view>
+      <view class="section__bd">
+        <progress percent="80" active active-mode="forwards" show-info></progress>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title"></view>
+  </view>
+  <view class="page__bd">
+    <view class="section">
+      <view class="section__title"></view>
+      <view class="section__bd"></view>
+    </view>
+  </view>
+</view>
+
+<view class="btn-area">
+  <button></button>
+</view>
+
+<view class="tip-area">
+  <view class="tip-area__title">Tips&Bugs</view>
+  <text></text>
+</view>
+
+<view class="cell">
+  <view class="cell__item"></view>
+</view>

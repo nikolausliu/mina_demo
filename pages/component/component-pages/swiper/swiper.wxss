@@ -1,0 +1,28 @@
+swiper {
+  padding: 0 60rpx;
+}
+
+swiper-item {
+  height: 100px;
+  text-align: center;
+  line-height: 150px;
+  color: #fff;
+}
+
+.cell__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__title {
+  padding: 0 60rpx;
+}
+
+.section__bd {
+  padding: 0 60rpx;
+}
+
+slider {
+  width: 100%;
+}

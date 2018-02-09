@@ -1,0 +1,4 @@
+/* pages/component/component-pages/slider/slider.wxss */
+slider {
+  width: 100%;
+}

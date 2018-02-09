@@ -1,0 +1,18 @@
+/* pages/component/component-pages/form/form.wxss */
+.section__bd {
+  justify-content: flex-start;
+}
+
+label {
+  margin-right: 30rpx;
+}
+
+slider {
+  width: 100%;
+}
+
+input {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}

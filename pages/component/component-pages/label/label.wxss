@@ -1,0 +1,23 @@
+/* pages/component/component-pages/label/label.wxss */
+
+.section__bd-2 {
+  display: block;
+}
+
+.label {
+  margin-bottom: 30rpx;
+}
+
+.label-1 label {
+  display: flex;
+  align-items: center;
+}
+
+.label-3 label {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-3 label checkbox {
+  margin-bottom: 30rpx;
+}

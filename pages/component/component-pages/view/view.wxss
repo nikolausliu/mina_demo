@@ -1,0 +1,13 @@
+.flex-wrap {
+  display: flex;
+  height: 100px;
+}
+
+.flex-item {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}

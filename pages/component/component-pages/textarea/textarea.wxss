@@ -1,0 +1,7 @@
+/* pages/component/component-pages/textarea/textarea.wxss */
+textarea {
+  width: 100%;
+  height: 30px;
+  padding: 30rpx;
+  background-color: #fff;
+}

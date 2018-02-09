@@ -1,0 +1,11 @@
+/* pages/component/component-pages/audio/audio.wxss */
+.cell__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+progress {
+  width: 100%;
+  margin: 0 10rpx;
+}

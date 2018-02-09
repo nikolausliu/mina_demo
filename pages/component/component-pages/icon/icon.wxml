@@ -1,0 +1,23 @@
+<!--pages/component/component-pages/icon/icon.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">icon</view>
+  </view>
+  <view class="page__bd">
+    <view class="group">
+      <block wx:for="{{iconSize}}" wx:key="{{item}}">
+        <icon type="success" size="{{item}}"></icon>
+      </block>
+    </view>
+    <view class="group">
+      <block wx:for="{{iconColor}}" wx:key="{{item}}">
+        <icon type="success" color="{{item}}"></icon>
+      </block>
+    </view>
+    <view class="group">
+      <block wx:for="{{iconType}}" wx:key="{{item}}">
+        <icon type="{{item}}"></icon>
+      </block>
+    </view>
+  </view>
+</view>

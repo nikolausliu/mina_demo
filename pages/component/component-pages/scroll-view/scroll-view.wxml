@@ -1,0 +1,31 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">scroll-view</view>
+  </view>
+  <view class="page__bd">
+    <view class="section">
+      <view class="section__title">Vertical Scroll</view>
+      <view class="section__title">纵向滚动</view>
+      <view class="section__bd">
+        <scroll-view scroll-y>
+          <view class="scroll-view-item bc_green">A</view>
+          <view class="scroll-view-item bc_red">B</view>
+          <view class="scroll-view-item bc_blue">C</view>
+        </scroll-view>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section__title">Horizontal Scroll</view>
+      <view class="section__title">横向滚动</view>
+      <view class="section__bd">
+        <scroll-view scroll-x="true" style="width: 100%; white-space: nowrap;">
+          <view class="scroll-view-item_H bc_green">A</view>
+          <view class="scroll-view-item_H bc_red">B</view>
+          <view class="scroll-view-item_H bc_blue">C</view>
+          <!-- <view style="width: 1000px; height: 100px;" class="bc_green">A</view> -->
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>

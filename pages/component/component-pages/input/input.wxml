@@ -1,0 +1,42 @@
+<!--pages/component/component-pages/input/input.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">input</view>
+  </view>
+  <view class="page__bd">
+
+    <view class="section">
+      <view class="section__title">可以自动聚焦的input/指定光标位置</view>
+      <input placeholder="将会获取焦点并且制定光标位置" focus bindfocus="focusHandle1" bindblur="blurHandle1" value="hello world" cursor="6"></input>
+      <view class="section__title">控制最大输入长度</view>
+      <input placeholder="最大输入长度为10" maxlength="10"></input>
+      <view class="section__title">实时获取输入值：{{value1}}</view>
+      <input placeholder="输入同步到view中" value="{{value1}}" bindinput="inputHandle1"></input>
+      <view class="section__title">控制输入的input</view>
+      <input placeholder="连续的两个1会变成2" bindinput="inputHandle2"></input>
+      <view class="section__title">控制键盘的input</view>
+      <input placeholder="输入6位密码自动收起键盘" password bindinput="inputHandle3" focus="{{focus3}}"></input>
+      <view class="section__title">数字输入的input</view>
+      <input placeholder="这是一个数字输入框" type="number"></input>
+      <view class="section__title">带小数点的input</view>
+      <input placeholder="带小数点的数字键盘" type="digit"></input>
+      <view class="section__title">身份证输入的input</view>
+      <input placeholder="身份证输入键盘" type="idcard"></input>
+      <view class="section__title">控制占位符颜色的input</view>
+      <input placeholder="占位符字体是紫色的" placeholder-style="color:purple"></input>
+      <view class="section__title">cursor-spacing: 50</view>
+      <input placeholder="光标与键盘的距离为50px" cursor-spacing="50"></input>
+      <view class="section__title">confirm-type:send</view>
+      <input placeholder="键盘右下角按钮为：发送" confirm-type="send"></input>
+      <view class="section__title">confirm-type:search</view>
+      <input placeholder="键盘右下角按钮为：搜索" confirm-type="search"></input>
+      <view class="section__title">confirm-type:next</view>
+      <input placeholder="键盘右下角按钮为：下一个" confirm-type="next"></input>
+      <view class="section__title">confirm-type:go</view>
+      <input placeholder="键盘右下角按钮为：前往" confirm-type="go"></input>
+      <view class="section__title">confirm-type:done</view>
+      <input placeholder="键盘右下角按钮为：完成" confirm-type="done" bindconfirm="confirmHandle"></input>
+    </view>
+
+  </view>
+</view>

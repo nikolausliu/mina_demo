@@ -1,0 +1,23 @@
+<!--pages/component/component-pages/button/button.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">button</view>
+  </view>
+  <view class="page__bd">
+    <view class="section">
+      <view class="section__title">基本</view>
+      <view class="section__bd">
+        <button type="primary" size="{{size}}" disabled="{{disabled}}" 
+        plain="{{plain}}" loading="{{loading}}">页面主操作 primary</button>
+        <button type="default" size="{{size}}" disabled="{{disabled}}" 
+        plain="{{plain}}" loading="{{loading}}">页面次操作 default</button>
+        <button type="warn" size="{{size}}" disabled="{{disabled}}" 
+        plain="{{plain}}" loading="{{loading}}">警告类操作 warn</button>
+        <button bindtap="setDisabled">设置disabled属性</button>
+        <button bindtap="setPlain">设置plain属性</button>
+        <button bindtap="setLoading">设置loading属性</button>
+        <button bindtap="setSize">设置按钮大小</button>
+      </view>
+    </view>
+  </view>
+</view>

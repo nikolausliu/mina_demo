@@ -1,0 +1,14 @@
+<!--pages/component/component-pages/canvas/canvas.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">canvas</view>
+  </view>
+  <view class="page__bd">
+    <view class="section">
+      <view class="section__title"></view>
+      <view class="section__bd">
+        <canvas canvas-id="myCanvas"></canvas>
+      </view>
+    </view>
+  </view>
+</view>

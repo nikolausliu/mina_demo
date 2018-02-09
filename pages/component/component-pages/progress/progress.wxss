@@ -1,0 +1,8 @@
+/* pages/component/component-pages/progress/progress.wxss */
+.section__bd {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+progress {
+  width: 100%;
+}

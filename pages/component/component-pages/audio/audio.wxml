@@ -1,0 +1,37 @@
+<!--pages/component/component-pages/audio/audio.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">audio</view>
+  </view>
+  <view class="page__bd">
+
+    <view class="section">
+      <view class="section__title"></view>
+      <view class="section__bd">
+        <audio id="audio" src="{{songlist[curIndex].src}}" poster="{{songlist[curIndex].poster}}" name="{{songlist[curIndex].name}}" author="{{songlist[curIndex].author}}" controls="{{controls}}" loop="{{loop}}" binderror="errorHandle"
+          bindplay="playHandle" bindpause="pauseHandle" bindtimeupdate="timeupdateHandle" bindended="endedHandle"></audio>
+      </view>
+      <view class="section__bd section__bd-2 progress__wrapper">
+        <text>{{curTime}}</text>
+        <progress percent="{{progress}}"></progress>
+        <text>{{duration}}</text>
+      </view>
+    </view>
+
+    <view class="cell">
+      <view class="cell__item">
+        <text>显示音频控件</text>
+        <switch checked="{{controls}}" bindchange="controlSwitch"></switch>
+      </view>
+      <view class="cell__item">
+        <text>循环播放</text>
+        <switch checked="{{loop}}" bindchange="loopSwitch"></switch>
+      </view>
+    </view>
+
+    <view class="btn-area">
+      <button bindtap="next">下一首</button>
+    </view>
+
+  </view>
+</view>

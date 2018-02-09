@@ -1,0 +1,44 @@
+<!--pages/component/component-pages/textarea/textarea.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">textarea</view>
+  </view>
+  <view class="page__bd">
+
+    <view class="section">
+      <view class="section__title">输入区域高度自适应，不会出现滚动条</view>
+      <view class="section__bd">
+        <textarea auto-height></textarea>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section__title">这是一个可以自动聚焦的textarea</view>
+      <view class="section__bd">
+        <textarea auto-focus></textarea>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section__title">设置placeholder</view>
+      <view class="section__bd">
+        <textarea placeholder="请输入留言内容" placeholder-style="color: red;"></textarea>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section__title">禁用键盘上方的 完成 按钮那一栏</view>
+      <view class="section__bd">
+        <textarea show-confirm-bar="{{showConfirmBar}}"></textarea>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section__title">绑定事件</view>
+      <view class="section__bd">
+        <textarea bindfocus="focusHandle" bindblur="blurHandle" bindlinechange="linechangeHandle" bindinput="inputHandle" bindconfirm="confirmHandle" placeholder="开发版请打开控制台查看打印信息"></textarea>
+      </view>
+    </view>
+
+  </view>
+</view>

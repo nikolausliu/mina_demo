@@ -1,0 +1,33 @@
+<!--pages/component/component-pages/switch/switch.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">switch</view>
+  </view>
+  <view class="page__bd">
+
+    <view class="section">
+      <view class="section__title">默认样式</view>
+      <view class="section__bd section__bd_1">
+        <switch checked bindchange="changeHandle1"></switch>
+        <switch bindchange="changeHandle2"></switch>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section__title">推荐展示样式</view>
+      <view class="section__bd section__bd_2">
+        <view class="cell">
+          <view class="cell__item">
+            <text>开启中</text>
+            <switch checked color="purple"></switch>
+          </view>
+          <view class="cell__item">
+            <text>关闭</text>
+            <switch color="orange"></switch>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

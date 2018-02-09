@@ -1,0 +1,19 @@
+<!--pages/component/component-pages/navigator/navigator.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">navigator</view>
+  </view>
+  <view class="page__bd">
+    <view class="btn-area">
+      <navigator url="/pages/component/component-pages/navigator/navigate?title=navigatePage" open-type="navigate">跳转到新页面(navigate)</navigator>
+      <navigator url="/pages/component/component-pages/navigator/redirect?title=redirectPage" open-type="redirect">在当前页面打开(redirect)</navigator>
+      <navigator url="../../index" open-type="switchTab">切换tab(switchTab)</navigator>
+      <navigator open-type="navigateBack">页面返回(navigateBack)</navigator>
+      <navigator url="./navigator" open-type="reLaunch">重加载(reLaunch)</navigator>
+    </view>
+    <view class="tip-area">
+      <view class="tip-area__title">Tips&Bugs</view>
+      <text>1.注意：重加载会使页面全部出栈，只留下新的页面。也就是说在非首屏页面重加载当前页后相当于当前页面成了“首页”，左上角就没有返回按钮了，因为页面栈中只有当前页面（开发版可以打开控制台查看点击以上navigator时的页面栈变化情况）。</text>
+    </view>
+  </view>
+</view>

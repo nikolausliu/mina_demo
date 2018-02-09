@@ -1,0 +1,70 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">swiper</view>
+  </view>
+  <view class="page__bd">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+    interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}" next-margin="{{nextMargin}}"
+    display-multiple-items="{{displayMultipleItems}}" current="{{current}}" 
+    bindchange="changeHandle" bindanimationfinish="animationfinishHandle">
+      <block wx:for="{{swipers}}">
+        <swiper-item class="{{item.background}}" item-id="{{item.id}}" id="{{item.id}}">{{item.text}}</swiper-item>
+      </block>
+    </swiper>
+
+    <view class="cell" style="margin: 50px 0;">
+      <view class="cell__item">
+        <text>指示点</text>
+        <switch checked bindchange="switch1Change"></switch>
+      </view>
+      <view class="cell__item">
+        <text>自动播放</text>
+        <switch bindchange="switch2Change"></switch>
+      </view>
+      <view class="cell__item">
+        <text>循环播放</text>
+        <switch bindchange="switch3Change"></switch>
+      </view>
+      <view class="cell__item">
+        <text>纵向滑动</text>
+        <switch bindchange="switch4Change"></switch>
+      </view>
+    </view>
+
+    <view class='section'>
+      <view class='section__title'>幻灯片切换时长(ms)</view>
+      <view class="section__bd">
+        <slider min="500" max="2000" show-value bindchange="changeDuration"></slider>
+      </view>
+    </view>
+
+    <view class='section'>
+      <view class='section__title'>自动播放间隔时长(ms)</view>
+      <view class="section__bd">
+        <slider min="2000" max="10000" show-value bindchange="changeInterval"></slider>
+      </view>
+    </view>
+
+    <view class='section'>
+      <view class='section__title'>在当前滑块中显示前后滑块的长度(px)</view>
+      <view class="section__bd">
+        <slider min="0" max="50" show-value bindchange="changeMargin"></slider>
+      </view>
+    </view>
+
+    <view class='section'>
+      <view class='section__title'>同时显示的滑块个数</view>
+      <view class="section__bd">
+        <slider min="1" max="3" show-value bindchange="changeMultipleItems"></slider>
+      </view>
+    </view>
+
+    <view class='section'>
+      <view class='section__title'>显示指定索引值（从0开始）的滑块</view>
+      <view class="section__bd">
+        <slider min="0" max="2" show-value bindchange="changeCurrent"></slider>
+      </view>
+    </view>
+
+  </view>
+</view>

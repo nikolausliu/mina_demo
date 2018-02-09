@@ -1,0 +1,89 @@
+<!--pages/component/component-pages/picker/picker.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">picker</view>
+  </view>
+  <view class="page__bd">
+
+    <view class="section">
+      <view class="section__title">普通选择器</view>
+      <view class="section__bd">
+        <view class="cell">
+          <view class="cell__item">
+            <picker mode="selector" value="{{selectorIndex}}" range="{{selectorData}}" bindchange="selectorHandle">
+              <view class="picker">
+                当前选择
+                <text>{{selectorData[selectorIndex]}}</text>
+              </view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section__title">普通选择器(Object Array)</view>
+      <view class="section__bd">
+        <view class="cell">
+          <view class="cell__item">
+            <picker mode="selector" value="{{selectorObjIndex}}" range="{{selectorObjData}}" range-key="name" bindchange="selectorObjHandle">
+              <view class="picker">
+                当前选择
+                <text>{{selectorObjData[selectorObjIndex].name}}</text>
+              </view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section__title">多列选择器</view>
+      <view class="section__bd">
+        <view class="cell">
+          <view class="cell__item">
+            <picker mode="multiSelector" value="{{multiIndex}}" range="{{multiData}}" bindchange="multiHandle" bindcolumnchange="multiColumnHandle">
+              <view class="picker">
+                当前选择
+                <text>{{multiData[0][multiIndex[0]]}}, {{multiData[1][multiIndex[1]]}}, {{multiData[2][multiIndex[2]]}}</text>
+              </view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section__title">时间选择器</view>
+      <view class="section__bd">
+        <view class="cell">
+          <view class="cell__item">
+            <picker mode="time" value="{{time}}" start="{{timeStart}}" end="{{timeEnd}}" bindchange="timeHandle">
+              <view class="picker">
+                当前选择
+                <text>{{time}}</text>
+              </view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section__title">日期选择器</view>
+      <view class="section__bd">
+        <view class="cell">
+          <view class="cell__item">
+            <picker mode="date" value="{{date}}" start="{{dateStart}}" end="{{dateEnd}}" bindchange="dateHandle">
+              <view class="picker">
+                当前选择
+                <text>{{date}}</text>
+              </view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>
