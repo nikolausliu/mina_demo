@@ -1,1 +1,85 @@
 /* pages/api/api.wxss */
+.index {
+  background-color: #fbf9fe;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  flex: 1;
+  min-height: 100%;
+  font-size: 32rpx;
+}
+
+.head {
+  padding: 80rpx;
+  line-height: 1;
+}
+
+.body {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  overflow: hidden;
+}
+
+.head .desc {
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: #999;
+}
+
+.widgets-item {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 4rpx;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.widgets-info {
+  display: flex;
+  padding: 40rpx;
+  align-items: center;
+  transition: opacity 0.3s linear;
+}
+
+.widgets-info-sel {
+  opacity: 0.5;
+}
+
+.widgets-list {
+  transition: max-height 0.3s linear;
+  max-height: 0;
+}
+
+.widgets-list-show {
+  max-height: 1000rpx;
+}
+
+.widgets-list-show {
+  display: block;
+}
+
+.widget {
+  position: relative;
+  padding: 26rpx 40rpx;
+}
+
+.widget-arrow {
+  position: absolute;
+  top: 28rpx;
+  right: 44rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.widget-line {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 40rpx;
+  width: 100%;
+  height: 2rpx;
+  background-color: #f0f0f0;
+}
+
+.widget-line-first {
+  display: none;
+}
