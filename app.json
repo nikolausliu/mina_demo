@@ -25,7 +25,15 @@
     "pages/component/component-pages/map/map",
     "pages/component/component-pages/canvas/canvas",
     "pages/component/component-pages/navigator/navigate",
-    "pages/component/component-pages/navigator/redirect"
+    "pages/component/component-pages/navigator/redirect",
+
+    "pages/api/api-pages/login/login",
+    "pages/api/api-pages/getUserInfo/getUserInfo",
+    "pages/api/api-pages/requestPayment/requestPayment",
+    "pages/api/api-pages/onShareAppMessage/onShareAppMessage",
+    "pages/api/api-pages/share-button/share-button",
+    "pages/api/api-pages/customMessage/customMessage",
+    "pages/api/api-pages/templateMessage/templateMessage"
   ],
   "window": {
     "navigationBarBackgroundColor": "#fff",

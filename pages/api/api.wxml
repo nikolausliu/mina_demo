@@ -11,7 +11,7 @@
           </view>
           <view class="widgets-list {{item.open ? 'widgets-list-show' : ''}}">
             <block wx:for="{{item.pages}}" wx:for-item="page" wx:for-index="idx" wx:key="{{page}}">
-              <navigator url="component-pages/{{page.key}}/{{page.key}}" class='widget'>
+              <navigator url="api-pages/{{page.key}}/{{page.key}}" class='widget'>
                 <text class="widget-list-name">{{page.name}}</text>
                 <image class="widget-arrow" src="/images/arrowright.png" mode="aspectFill"></image>
                 <view class="widget-line {{idx === 0 ? 'widget-line-first' : ''}}"></view>
